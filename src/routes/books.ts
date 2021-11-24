@@ -9,7 +9,7 @@ let filePath = path.join(__dirname, '../../src/routes/appdata/database.json')
 
 /* GET books listing. */
 router.get('/', function (req: Request, res: Response, next: NextFunction) {
-  writejsonFile(filePath, books)
+  // writejsonFile(filePath, books)
   res.status(200).json(books)
 })
 

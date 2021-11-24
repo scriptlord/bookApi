@@ -1,153 +1,72 @@
 [
    {
-      "Title": "A eating yam  Mother",
-      "Author": "Jerry John",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President  is the first of a planned two-volume series",
-      "pageCount": 768,
-      "Genre": "autobiography",
-      "bookId": 3,
-      "Publisher": "Fanta"
+      "Title": "Complete CSS",
+      "Author": "Rajput Chan",
+      "datePublished": "1999-0-12T19:0455.455z",
+      "Description": "learn CSS basic",
+      "pageCount": 700,
+      "Genre": "Coding",
+      "bookId": 1,
+      "Publisher": "S Chand"
    },
    {
-      "Title": "Dragon Fly",
-      "Author": "Jerry John",
+      "Title": "Complete HTML",
+      "Author": "HK Dass",
       "datePublished": "2000-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President  is the first of a planned two-volume series",
-      "pageCount": 74,
-      "Genre": "autobiography",
+      "Description": "learn HTML basic",
+      "pageCount": 400,
+      "Genre": "Coding",
+      "bookId": 2,
+      "Publisher": "S Chand"
+   },
+   {
+      "Title": "Complete JavaScript",
+      "Author": "Foluso Kayode",
+      "datePublished": "2000-0-12T19:0455.455z",
+      "Description": "learn JavaScript basic",
+      "pageCount": 200,
+      "Genre": "Coding",
+      "bookId": 3,
+      "Publisher": "Apress"
+   },
+   {
+      "Title": "Complete SQL",
+      "Author": "Solabomi Kayode",
+      "datePublished": "2001-0-12T19:0455.455z",
+      "Description": "Learn SQL basic",
+      "pageCount": 300,
+      "Genre": "Coding",
+      "bookId": 4,
+      "Publisher": "Apress"
+   },
+   {
+      "Title": "Complete BootStrap",
+      "Author": "Samuel Oyelede",
+      "datePublished": "2002-0-12T19:0455.455z",
+      "Description": "Learn BootStrap basic",
+      "pageCount": 500,
+      "Genre": "Coding",
+      "bookId": 5,
+      "Publisher": "Apress"
+   },
+   {
+      "Title": "Agile Practices",
+      "Author": "Folahanmi Jacobs",
+      "datePublished": "2002-0-12T19:0455.455z",
+      "Description": "Learn Agile Basic",
+      "pageCount": 400,
+      "Genre": "Management",
       "bookId": 6,
-      "Publisher": "Coke",
-      "dateEdited": "Wed, 24 Nov 2021 06:35:03 GMT"
+      "Publisher": "Apress"
    },
    {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 6,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 8,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 9,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 9,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 9,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 11,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 12,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 13,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 14,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 14,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 15,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 15,
-      "Publisher": "dgn;sdfj;aifg"
-   },
-   {
-      "Title": "agadns;gad",
-      "Author": "Bsdmf.ngfga",
-      "datePublished": "2020-0-12T19:0455.455z",
-      "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
-      "pageCount": 574,
-      "Genre": "d.m,fds.fd",
-      "bookId": 16,
-      "Publisher": "dgn;sdfj;aifg"
+      "Title": "Scrum Practices",
+      "Author": "Eniola Sensei",
+      "datePublished": "2002-0-12T19:0455.455z",
+      "Description": "Learn Scrum Basic",
+      "pageCount": 200,
+      "Genre": "Management",
+      "bookId": 7,
+      "Publisher": "Apress"
    }
 ]
