@@ -19,6 +19,7 @@
     "@types/uuid": "^8.3.3",
     "config": "^3.3.6",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "^4.17.1",
     "http-errors": "^1.8.1",
@@ -34,6 +35,7 @@
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-typescript": "^7.16.0",
     "@types/config": "^0.0.40",
+    "@types/cors": "^2.8.12",
     "@types/http-errors": "^1.8.1",
     "@types/joi": "^17.2.3",
     "@types/node": "^16.11.9",
@@ -44,7 +46,7 @@
     "tsc-node": "^0.0.3",
     "typescript": "^4.5.2"
   },
-    "engines": {
+  "engines": {
     "node": "^14.18",
     "yarn": "^1.22"
   }

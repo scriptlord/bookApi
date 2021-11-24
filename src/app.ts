@@ -4,6 +4,7 @@ import path from 'path'
 import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 import os from 'os'
+import cors from 'cors'
 
 import indexRouter from './routes/index'
 import booksRouter from './routes/books'
@@ -20,6 +21,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
+ app.use(require('cors')())
 
 app.use(function (req, res, next) {
   console.log(`Operating system details: Type: ${os.type()}, Platform: ${os.platform()})`)
