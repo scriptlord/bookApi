@@ -69,5 +69,35 @@
       "bookId": 9,
       "Publisher": "Apress",
       "dateEdited": "Wed, 24 Nov 2021 10:06:51 GMT"
+   },
+   {
+      "Title": "Complete JQuery",
+      "Author": "Oyinkosola Davids",
+      "datePublished": "1995-0-12T19:0455.455z",
+      "Description": "learn JQuery basic",
+      "pageCount": 700,
+      "Genre": "Coding",
+      "bookId": 8,
+      "Publisher": "Apress"
+   },
+   {
+      "Title": "Complete NodeJS",
+      "Author": "David Adejo",
+      "datePublished": "1996-0-12T19:0455.455z",
+      "Description": "learn NodeJS basic",
+      "pageCount": 700,
+      "Genre": "Coding",
+      "bookId": 9,
+      "Publisher": "Apress"
+   },
+   {
+      "Title": "Quality Assurance",
+      "Author": "Mary Susan",
+      "datePublished": "2021-0-12T19:0455.455z",
+      "Description": "learn QA basic",
+      "pageCount": 700,
+      "Genre": "Management",
+      "bookId": 10,
+      "Publisher": "Apress"
    }
 ]
