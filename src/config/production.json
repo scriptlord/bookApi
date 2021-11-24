@@ -1,0 +1,6 @@
+{
+  "name": "Foluso Express App - Production",
+  "mail": {
+    "host": "dev-mail-server"
+  }
+}
