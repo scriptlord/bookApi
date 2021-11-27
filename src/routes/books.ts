@@ -24,8 +24,8 @@ router.get('/:id', (req: Request, res: Response, next: NextFunction) => {
 
 /* POST a new book by ID */
 router.post('/', (req: Request, res: Response, next: NextFunction) => {
-  const { error } = validateGenre(req.body)
-  if (error) return res.status(400).send(error.details[0].message)
+  // const { error } = validateGenre(req.body)
+  // if (error) return res.status(400).send(error.details[0].message)
 
   const book: Book = {
     Title: req.body.Title,
@@ -45,8 +45,8 @@ router.post('/', (req: Request, res: Response, next: NextFunction) => {
 })
 
 router.put('/:id', (req: Request, res: Response, next: NextFunction) => {
-  const { error } = validateGenre(req.body)
-  if (error) return res.status(400).send(error.details[0].message)
+  // const { error } = validateGenre(req.body)
+  // if (error) return res.status(400).send(error.details[0].message)
   let book = books.find((b: Book) => b.bookId === parseInt(req.params.id))
   if (!book)
     return res.status(404).send('The book with the given ID was not found.')
@@ -69,16 +69,16 @@ router.delete('/:id', (req: Request, res: Response, next: NextFunction) => {
 
 function validateGenre(book: Book) {
   const schema = joi.object({
-    title: joi.string().alphanum().min(3).max(30).required(),
-    author: joi.string().min(3).required(),
-    datePublished: joi.date(),
-    description: joi.string().min(3),
-    number: joi.number(),
-    genre: joi.string().min(3).max(30),
-    publisher: joi.string().alphanum().min(3).max(30)
+    Title: joi.string().min(3).max(30).required(),
+    Author: joi.string().min(3).required(),
+    datePublished: joi.string(),
+    Description: joi.string().min(3),
+    pageCount: joi.number(),
+    Genre: joi.string().min(3).max(30),
+    Publisher: joi.string().min(3).max(30),
   })
 
-   return schema.validate(book)
+  return schema.validate(book)
 }
 
 function writejsonFile(filep: string, content: any) {

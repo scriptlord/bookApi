@@ -2,7 +2,6 @@ import supertest from 'supertest'
 import app from '../app'
 import express, { Request, Response, NextFunction } from 'express'
 
-
 //test for GET
 describe('GET /', () => {
   test('GET /', (done) => {
@@ -21,21 +20,19 @@ describe('GET /', () => {
   })
 
   //test for put
-  test('PUT /books/6', (done) => {
+  test('PUT /books/2', (done) => {
     supertest(app)
-      .put(`/books/6`)
+      .put(`/books/2`)
       .expect('Content-Type', /json/)
       .send({
-        Title: 'Dragon Fly',
-        Author: 'Jerry John',
+        Title: 'Complete HTML',
+        Author: 'HK Dass',
         datePublished: '2000-0-12T19:0455.455z',
-        Description:
-          'A Promised Land is a memoir by Barack Obama, the 44th President  is the first of a planned two-volume series',
-        pageCount: 74,
-        Genre: 'autobiography',
-        bookId: 6,
-        Publisher: 'Coke',
-        dateEdited: 'Wed, 24 Nov 2021 05:15:05 GMT',
+        Description: 'learn HTML basic',
+        pageCount: 400,
+        Genre: 'Coding',
+        bookId: 2,
+        Publisher: 'S Chand',
       })
       .expect(200)
       .expect((res) => {
@@ -95,8 +92,7 @@ describe('GET /', () => {
         Publisher: 'dgn;sdfj;aifg',
       })
       .expect(200)
-      .expect((res) => {
-      })
+      .expect((res) => {})
       .end((err, res) => {
         if (err) return done(err)
         return done()
