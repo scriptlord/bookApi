@@ -9,7 +9,7 @@ let filePath = path.join(__dirname, '../../src/routes/appdata/database.json')
 
 /* GET books listing. */
 router.get('/', function (req: Request, res: Response, next: NextFunction) {
-  // writejsonFile(filePath, books)
+  writejsonFile(filePath, books)
   res.status(200).json(books)
 })
 
@@ -24,8 +24,8 @@ router.get('/:id', (req: Request, res: Response, next: NextFunction) => {
 
 /* POST a new book by ID */
 router.post('/', (req: Request, res: Response, next: NextFunction) => {
-  // const { error } = validateGenre(req.body)
-  // if (error) return res.status(400).send(error.details[0].message)
+  const { error } = validateGenre(req.body)
+  if (error) return res.status(400).send(error.details[0].message)
 
   const book: Book = {
     Title: req.body.Title,
@@ -45,8 +45,8 @@ router.post('/', (req: Request, res: Response, next: NextFunction) => {
 })
 
 router.put('/:id', (req: Request, res: Response, next: NextFunction) => {
-  // const { error } = validateGenre(req.body)
-  // if (error) return res.status(400).send(error.details[0].message)
+  const { error } = validateGenre(req.body)
+  if (error) return res.status(400).send(error.details[0].message)
   let book = books.find((b: Book) => b.bookId === parseInt(req.params.id))
   if (!book)
     return res.status(404).send('The book with the given ID was not found.')
