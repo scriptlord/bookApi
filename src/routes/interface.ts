@@ -10,3 +10,12 @@ export interface Book {
   Publisher: string
   dateEdited?: string
 }
+
+
+export interface User {
+  name: string,
+  email: string,
+  password: string,
+  dob: string,
+  _id: string
+}

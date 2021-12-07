@@ -1,5 +1,7 @@
+
 import express, { Request, Response, NextFunction } from 'express'
 const router = express.Router()
+import { auth } from './authMIddleWare'
 import path from 'path'
 import joi from 'joi'
 import { Book } from './interface'
@@ -8,13 +10,13 @@ import { writeFile } from 'fs'
 let filePath = path.join(__dirname, '../../src/routes/appdata/database.json')
 
 /* GET books listing. */
-router.get('/', function (req: Request, res: Response, next: NextFunction) {
+router.get('/', auth, function (req: Request, res: Response, next: NextFunction) {
   writejsonFile(filePath, books)
   res.status(200).json(books)
 })
 
 /* GET particular book by ID */
-router.get('/:id', (req: Request, res: Response, next: NextFunction) => {
+router.get('/:id', auth, (req: Request, res: Response, next: NextFunction) => {
   let book = books.find((c: Book) => c.bookId === parseInt(req.params.id))
   if (!book)
     return res.status(404).send('The book with the given ID was not found.')
@@ -23,8 +25,8 @@ router.get('/:id', (req: Request, res: Response, next: NextFunction) => {
 })
 
 /* POST a new book by ID */
-router.post('/', (req: Request, res: Response, next: NextFunction) => {
-  const { error } = validateGenre(req.body)
+router.post('/', auth, (req: Request, res: Response, next: NextFunction) => {
+  const { error } = validateBook(req.body)
   if (error) return res.status(400).send(error.details[0].message)
 
   const book: Book = {
@@ -44,8 +46,8 @@ router.post('/', (req: Request, res: Response, next: NextFunction) => {
   res.status(201).json(book)
 })
 
-router.put('/:id', (req: Request, res: Response, next: NextFunction) => {
-  const { error } = validateGenre(req.body)
+router.put('/:id', auth, (req: Request, res: Response, next: NextFunction) => {
+  const { error } = validateBook(req.body)
   if (error) return res.status(400).send(error.details[0].message)
   let book = books.find((b: Book) => b.bookId === parseInt(req.params.id))
   if (!book)
@@ -56,18 +58,18 @@ router.put('/:id', (req: Request, res: Response, next: NextFunction) => {
   res.status(200).json(result)
 })
 
-router.delete('/:id', (req: Request, res: Response, next: NextFunction) => {
+router.delete('/:id', auth, (req: Request, res: Response, next: NextFunction) => {
   const book = books.find((b: Book) => b.bookId === parseInt(req.params.id))
   if (!book)
     return res.status(404).send('The book with the given ID was not found.')
 
   const index = books.indexOf(book)
-  books.splice(index, 1)
+  const deletedBook  = books.splice(index, 1)
   writejsonFile(filePath, books)
-  res.status(200).json(books)
+  res.status(200).json(deletedBook)
 })
 
-function validateGenre(book: Book) {
+function validateBook(book: Book) {
   const schema = joi.object({
     Title: joi.string().min(3).max(30).required(),
     Author: joi.string().min(3).required(),
@@ -81,7 +83,7 @@ function validateGenre(book: Book) {
   return schema.validate(book)
 }
 
-function writejsonFile(filep: string, content: any) {
+export function writejsonFile(filep: string, content: any) {
   writeFile(filep, JSON.stringify(content, null, 3), (err) => {
     if (err) return
   })

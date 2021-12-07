@@ -1,14 +1,24 @@
+require("dotenv").config()
 import createError from 'http-errors'
 import express, { Request, Response, NextFunction } from 'express'
 import path from 'path'
+require('dotenv').config()
 import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 import os from 'os'
 import cors from 'cors'
+import bcrypt from 'bcrypt'
+import passport from 'passport'
+import flash from 'express-flash'
+import session from 'express-session'
+
+
 
 import indexRouter from './routes/index'
 import booksRouter from './routes/books'
+import userRouter from './routes/user'
 import { nextTick } from 'process'
+
 
 const app = express()
 
@@ -16,26 +26,29 @@ const app = express()
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade')
 
+// app.use(passport.initialize())
+// app.use(passport.session())
+// app.use(flash())
+
+
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
- app.use(require('cors')())
+app.use(require('cors')())
 
 app.use(function (req, res, next) {
-  console.log(`Operating system details: Type: ${os.type()}, Platform: ${os.platform()})`)
-  console.log(`User Hostname: ${os.hostname()}`)
-  console.log(`Network details: ${os.networkInterfaces()}`)
-  console.log(`Network details: ${os.cpus()[0]}`)
-  console.log(JSON.stringify(req.headers, null, 3))
-  console.log(JSON.stringify(res.header), null, 3)
+  console.log(process.env.ACCESS_TOKEN_SECRET_KEY)
   next()
 }
 )
 
-app.use('/', indexRouter)
+app.use('/home', indexRouter)
 app.use('/books', booksRouter)
+app.use('/user', userRouter)
+// app.use('/login', yyy)
+
 
 
 // catch 404 and forward to error handler

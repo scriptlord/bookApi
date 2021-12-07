@@ -1,0 +1,23 @@
+[
+   {
+      "name": "Foluso Kayode",
+      "email": "foluso.kayode.ng@gmail.com",
+      "password": "$2b$10$3YLJmFP/JhkYYe38vD0.guTYenkBAKSj/Z.dPgWYpB2x7cSelyGjq",
+      "dob": "2021-12-11",
+      "_id": "16d244ce-492c-492f-a7a9-48db2aa13dd2"
+   },
+   {
+      "name": "Emmanuel Davids",
+      "email": "emmanueldavids@gmail.com",
+      "password": "$2b$10$.kgQuQyM6Yx8UjLT6LP2vudtIyUnFZyQ2yMn1zbXMRykNZ5KVFGwC",
+      "dob": "12/10/2000",
+      "_id": "5b1e990a-fdf7-4eb8-91d5-bcd8f8e8ca91"
+   },
+   {
+      "name": "Foluso Kayode",
+      "email": "folus@gmail.com",
+      "password": "$2b$10$dCjrjrxYfl/BvwvP69zBu.UV31msJxbgyB89L9afnyVr2DNJlGMZW",
+      "dob": "2021-12-17",
+      "_id": "a8c98888-f31e-4b0d-b042-0588f6c2eed3"
+   }
+]
